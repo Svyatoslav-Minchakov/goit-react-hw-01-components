@@ -5,11 +5,10 @@ import { Statistics } from './statistics/statistics';
 import data from '../data.json';
 
 import { FriendList } from './friendList/friendList';
-import dataFriends from '../friends.json'
+// import dataFriends from '../friends.json'
 
 import { TransactionHistoryWrapper } from './transaction_history/transactionHistoryWrapper'
 import transactions from '../transactions.json'
-
 
 
 
