@@ -1,7 +1,8 @@
 import { TransactionHistory } from './TransactionHistory'
+import { TableWrapper } from './transactionHistory.styled'
 
 export const TransactionHistoryWrapper = ({ items }) => {
-    return <table className="transaction-history">
+    return <TableWrapper className="transaction-history">
   <thead>
     <tr>
       <th>Type</th>
@@ -17,5 +18,5 @@ export const TransactionHistoryWrapper = ({ items }) => {
         />
         
   </tbody>
-</table>
+</TableWrapper>
 }

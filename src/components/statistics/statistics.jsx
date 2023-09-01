@@ -1,9 +1,9 @@
+import { StatisticsBox } from "./statistics.styled"
 
-
-export const Statistics = ({stats}) => {
-   
-    return <section className="statistics">
-  <h2 className="title">Upload stats</h2>
+export const Statistics = ({stats, title}) => {
+ 
+    return <StatisticsBox className="statistics">
+  <h2 className="title">{title}</h2>
 
   <ul className="stat-list">
     
@@ -33,6 +33,6 @@ export const Statistics = ({stats}) => {
     </li>
    
   </ul>
-</section>
+</StatisticsBox>
 }
 

@@ -13,8 +13,6 @@ import transactions from '../transactions.json'
 
 
 
-
-
 export const App = () => {
   return <>
     <User
@@ -26,6 +24,7 @@ export const App = () => {
     />
 
     <Statistics
+      title={"Upload stats"}
       stats={data}
     />
 
