@@ -1,6 +1,9 @@
 
+import { UserCard } from './profile.styled';
+
+
 export const User = (props) => {
-   return <div className="profile">
+   return <UserCard className="profile">
   <div className="description">
     <img
       src={props.avatar}
@@ -26,7 +29,7 @@ export const User = (props) => {
       <span className="quantity">{props.stats.likes}</span>
     </li>
   </ul>
-</div>
+</UserCard>
 }
 
 
