@@ -13,6 +13,7 @@ export const FriendListWrapper = styled('ul')(() => {
 
 export const ListItem = styled('li')(() => {
   return {
+    position: 'relative',
     width: '100%',
     backgroundColor: 'white',
     display: 'flex',
@@ -46,5 +47,15 @@ export const Name = styled('p')(() => {
     fontSize: 24,
     fontWeight: 'bold',
     marginLeft: 30,
+  };
+});
+
+export const StatusText = styled('p')(({ $isOnline }) => {
+  return {
+    position: 'absolute',
+    top: 0,
+    right: 20,
+    fontWeight: 'bold',
+    color: $isOnline ? 'green' : 'red',
   };
 });

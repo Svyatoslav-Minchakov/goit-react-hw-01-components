@@ -1,11 +1,14 @@
-import { Status, Image, ListItem, Name } from './friendList.styled';
+import { Status, Image, ListItem, Name, StatusText } from './friendList.styled';
 
 export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <ListItem className="item">
-      <Status $isOnline={isOnline} className="status"></Status>
-      <Image className="avatar" src={avatar} alt={name} width="48" />
-      <Name className="name">{name}</Name>
+    <ListItem>
+      <Status $isOnline={isOnline}></Status>
+      <Image src={avatar} alt={name} />
+      <Name>{name}</Name>
+      <StatusText $isOnline={isOnline}>
+        {isOnline ? 'Online' : 'Offline'}
+      </StatusText>
     </ListItem>
   );
 };
